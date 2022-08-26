@@ -1,0 +1,21 @@
+services:
+
+  adguard:
+    container_name: adguardhome
+    image: adguard/adguardhome # Official image from AdGuard https://hub.docker.com/r/adguard/adguardhome
+    ports:
+      - 53/tcp      # DNS
+      - 53/udp      # DNS
+      - 80/tcp      
+      - 3000/tcp
+      - 67/udp      # For use as DCHP server
+      - 68/tcp      # For use as DCHP server
+      - 68/udp      # For use as DCHP server
+      - 443/tcp
+      - 853/tcp     # For DNS over TLS
+      
+    volumes:
+      - ./work:/opt/adguardhome/work
+      - ./conf:/opt/adguardhome/conf
+
+    restart: unless-stopped
