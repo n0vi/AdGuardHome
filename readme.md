@@ -2,13 +2,21 @@
 
 Dockerized instance of AdGuard Home to be used on Raspbian OS arm64 on novapi.
 
-Based on [Install AdGuard Home with Docker on a Raspberry Pi 4](https://samuelsson.dev/install-adguard-home-with-docker-on-a-raspberry-pi-4/) using official [AdGuard Home image](https://hub.docker.com/r/adguard/adguardhome).
+Based on official [AdGuard Home image](https://hub.docker.com/r/adguard/adguardhome).
 
 
 ## Installation
 
-TBD
+Clone the repository to the local:
+```bash
+git clone https://github.com/n0vi/AdGuardHome adguardhome
 
+```
+
+Create conf and work folders for adguard container volumes
+```bash
+mkdir conf work
+```
 
 ## Usage
 
@@ -20,7 +28,7 @@ sudo docker-compose up -d adguardhome
 Logs to check:
 
 ```bash
-sudo docker-compose logs -f adguard
+sudo docker-compose logs -f adguardhome
 ```
 
 ## Update To A Newer Version

@@ -1,6 +1,6 @@
 services:
 
-  adguard:
+  adguardhome:
     container_name: adguardhome
     image: adguard/adguardhome # Official image from AdGuard https://hub.docker.com/r/adguard/adguardhome
     ports:
