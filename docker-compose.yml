@@ -4,9 +4,9 @@ services:
     container_name: adguardhome
     image: adguard/adguardhome # Official image from AdGuard https://hub.docker.com/r/adguard/adguardhome
     ports:
-    
+
       - "53:53/tcp"           # DNS
-      - "53:5353/udp"         # DNS
+      - "53:53/udp"           # DNS
 
       - "80:80/tcp"           # Web interface      
       - "443:443/tcp"         # Web interface
