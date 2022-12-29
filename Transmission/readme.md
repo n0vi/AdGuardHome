@@ -10,15 +10,11 @@ git clone https://github.com/n0vi/HomeAutomation HomeAutomation
 
 ```
 
-Create config, downloads, watch folders for transmission container volumes
+Create config and symlink downloads and watch for transmission container volumes
 ```bash
-mkdir config downloads watch
-```
-
-Symlink downloads and watch to a proper location
-```bash
-ln -s downloads /path/to/downloads 
-ln -s watch /path/to/downloads 
+mkdir config 
+ln -s /path/to/downloads downloads  
+ln -s /path/to/downloads watch  
 ```
 
 ## Usage
