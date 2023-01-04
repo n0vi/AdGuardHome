@@ -12,7 +12,7 @@ services:
  
       - TZ=Europe/Minsk
  
-      - TRANSMISSION_WEB_HOME=/combustion-release/  # UI Option
+      - TRANSMISSION_WEB_HOME=/transmission-web-control/   # UI Option
                                                     #  /combustion-release/
                                                     #  /transmission-web-control/
                                                     #  /kettu/
