@@ -17,8 +17,8 @@ services:
       - CLI_ARGS= #optional
 
     volumes:
-      - ./books: /config
-      - /storage: /storage
+      - ./books:/config
+      - /storage:/storage
 
     ports:
       - 8080:8080     # UI
