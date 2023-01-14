@@ -1,0 +1,24 @@
+version: "2.1"
+
+services:
+
+  inpx-web:
+    image: inpx-web:latest
+    container_name: inpx-web
+
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Minsk
+
+    volumes:
+      - ./appdir:/appdir
+      - ./libdir:/libdir
+
+    ports:
+      - 8084:12380    # Web UI
+
+    restart: unless-stopped
+
+    command: "/usr/local/bin/inpx-web --app-dir /appdir --lib-dir /libdir"
+ 
