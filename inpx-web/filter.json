@@ -1,0 +1,8 @@
+{
+    "info": {
+      "collection": "Flibusta FB2 Filtered",
+      "version": "1.0.0"
+    },
+    "filter": "(r) => r.genre == 'love_contemporary'"
+  }
+  

@@ -20,5 +20,5 @@ services:
 
     restart: unless-stopped
 
-    command: "/usr/local/bin/inpx-web --app-dir /appdir --lib-dir /libdir"
+    command: "/usr/local/bin/inpx-web --app-dir /appdir --lib-dir /libdir --unsafe-filter"
  
