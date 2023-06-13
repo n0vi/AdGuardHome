@@ -2,7 +2,7 @@
 
 [INPX-Web](https://github.com/bookpauk/inpx-web) is a Web and OPDS server over INPX library file.
 
-inpx-web is [inpx-web 1.5.2 linux-arm64](https://github.com/bookpauk/inpx-web/releases/download/1.5.2/inpx-web-1.5.2-linux-arm64.zip)
+inpx-web is [inpx-web 1.5.5 linux-arm64](https://github.com/bookpauk/inpx-web/releases/download/1.5.5/inpx-web-1.5.5-linux-arm64.zip)
 
 
 ## Installation
